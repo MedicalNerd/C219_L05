@@ -201,8 +201,8 @@ button:hover {
 .footer {
   
     position: fixed;
-
-    background-color: teal;
+    color:#f2f2f2;
+    background-color: #FF385E;
     height: 50px;
     width: 100%;
     line-height: 50px;
@@ -211,7 +211,11 @@ button:hover {
 }
 .footer .nav-links a{
     text-decoration: none;
-   
+    color:#f2f2f2;
+}
+.footer .nav-links a:hover{
+    text-decoration: none;
+    color:#FFB7C5;
 }
 .nav-links {
     margin-left: 10px;
@@ -289,6 +293,75 @@ body {
   input[type=submit]:hover {
     background-color: pink;
   }
+
+.hamburger-container {
+  display: block;
+  cursor: pointer;
+  float: right;
+  margin-top: 7px;
+  margin-right: 10px;
+}
+
+.first-line, .second-line, .third-line {
+  width: 33px;
+  height: 5px;
+  background: whitesmoke;
+  border-radius: 10px;
+  margin: 5px 0;
+  transition: 400ms;
+  z-index: 5;
+}
+
+
+.hamburger-menu-container {
+  display: none;
+  position: fixed;
+  top: 6%;
+  right: 0;
+  background-color: #FF5173;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.show-menu {
+  display: block;
+}
+
+
+
+
+.menu-home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 200%;
+    text-decoration: none;
+    border-bottom: 10px solid white;
+    border-radius: 50% 50%;
+    color: #f2f2f2;
+  }
+  
+.menu-home a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    border-bottom: 1px solid white;
+  }
+  
+
+.menu-home a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+  
+
   @media only screen and (max-width: 768px) {
     body{
         background-repeat: no-repeat;
@@ -326,8 +399,10 @@ body {
         object-fit: cover;
     }
     article p{
-      margin-left:30px;
-      margin-right:10px;
+        display:flex;
+        align-items: center;
+        margin-left:30px;
+        margin-right:10px;
     }
     .navitem,.navitem .dropdown{
         display:none;
@@ -347,6 +422,11 @@ body {
     .footer{
         text-align: center;
     }
+    .hamburger-container{
+     
+        display:block;
+      }
+      
     
     
 

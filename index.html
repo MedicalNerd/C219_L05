@@ -61,7 +61,18 @@
                 </g>
               </svg>
         </li>
-        
+        <div id="hamburger" class="hamburger-container">
+            <div class="first-line"></div>
+            <div class="second-line"></div>
+            <div class="third-line"></div>
+        </div>
+        <div id="hamburger-menu" class="hamburger-menu-container">
+          <a class="menu-home"href="index.html">Home</a>
+          <a class="menu-home"href="#travelstyles">Travel Styles</a>
+          <a class="menu-home"href="destination.html">Destinations</a>
+          <a class="menu-home"href="#Contactus">Contact Us</a>
+          <a class="menu-home"href="#aboutus">About Us</a>
+        </div>
         <li class="navitem"><a href="#aboutus">About Us</a></li> 
         <li class="navitem"><a href="contact-me.html">Contact Us</a></li>
         <li class="navitem dropdown"><a href="destination.html">Destinations</a>
@@ -141,7 +152,16 @@
             <a class="nav-link" href="">Site Map</a>
         </div>
     </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var hamburger = document.getElementById('hamburger');
+        var menuContainer = document.getElementById('hamburger-menu');
     
+        hamburger.addEventListener('click', function () {
+          menuContainer.classList.toggle('show-menu');
+        });
+      });
+    </script>
 </body>
 </html>
 
