@@ -3,7 +3,22 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
+    <script>
+      function getRandomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+  
+      function changeBackground() {
+        const randomNumber = getRandomNumber(1,2);
+
+        document.body.style.backgroundImage = `url('images/japan${randomNumber}.jpg')`;
+       
+      }
+      
+      // Change background on page load
+      window.onload = changeBackground;
+  
+    </script>
 </head>
 <body>
     <ul class="navbar">
