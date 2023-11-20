@@ -10,7 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Minimum height of the viewport */
+ /* Minimum height of the viewport */
 }
 
 ul.navbar {
@@ -146,9 +146,7 @@ section {
     margin-top: 0%;
    
   }
-  button{
-    
-  }
+
   .bookbutton{
     margin-top: 15%;
   }
@@ -201,14 +199,23 @@ button:hover {
 }
 
 .footer {
-    margin-top: auto;
+  
+    position: fixed;
+
     background-color: teal;
     height: 50px;
+    width: 100%;
     line-height: 50px;
     padding-right: 15px;
+    bottom: 0;
+}
+.footer .nav-links a{
+    text-decoration: none;
+   
 }
 .nav-links {
     margin-left: 10px;
+    
 }
 
 .logo {
@@ -337,7 +344,9 @@ body {
         transform: scaleX(-1);
         border-radius: 50% 0%;
     }
-    
+    .footer{
+        text-align: center;
+    }
     
     
 
