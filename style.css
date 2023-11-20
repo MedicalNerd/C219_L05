@@ -294,7 +294,9 @@ body {
     background-color: pink;
   }
 
-
+  .hamburger-container,.hamburger-menu-container{
+    display: none;
+  }
 
   
 
@@ -358,7 +360,12 @@ body {
     .footer{
         text-align: center;
     }
-    .hamburger-container {
+    .hamburger-container{
+     
+        display:block;
+      }
+      
+      .hamburger-container {
         display: block;
         cursor: pointer;
         float: right;
@@ -423,7 +430,6 @@ body {
         background-color: #ddd;
         color: black;
       }
-    
     
 
    
