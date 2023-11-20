@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+ 
+        .diamond {
+            width: 100px;
+            height: 100px;
+            background: rgb(255, 255, 0);
+            position: relative;
+            transform: rotate(45deg);
+            transition: all 0.3s ease;
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+        }
+         /*Syazwan 22043300*/
+        .diamond:hover {
+            background: rgb(0, 0, 255);
+            transform: scale(1.5) rotate(45deg);
+        }
+        /*Syazwan 22043300*/
+ 
+        .parallelogram {
+            margin-left: 50px;
+            width: 200px;
+            height: 100px;
+            transform: skew(20deg);
+            background: rgba(238, 130, 238, 1);
+            transition: transform 2s ease;
+        }
+        /*Yoon Long 22021421*/
+ 
+        .rotate {
+            transform: skew(20deg) rotate(360deg);
+        }
+        /*Yoon Long 22021421*/
+ 
+        .parallelogram:hover {
+            transform: skew(20deg) rotate(360deg);
+        }
+        /*Yoon Long 22021421*/
+ 
+        .star {
+            margin-left: 50px;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid rgba(238, 130, 238, 1);
+            transform: rotate(35deg);
+            transition: transform 5s ease;
+        }
+        /*Tan Jin Wei 22035553*/
+ 
+        .star:hover {
+            transform: rotate(360deg);
+        }
+        /*Tan Jin Wei 22035553*/
+ 
+        .octagon {
+            margin-left: 350px;
+            width: 100px;
+            height: 100px;
+            background: rgb(171, 105, 241);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            transition: transform 1s;
+        }
+        /*Tan Jin Wei 22035553*/
+ 
+        .octagon:hover {
+            transform: scale(2);
+        }
+        /*Tan Jin Wei 22035553*/
+       
+        /*Nur Azimah 22037444*/
+        .circle {
+            margin-left: 350px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgb(171, 105, 241);
+            transition: transform 1s;
+        }
+ 
+        .circle:hover {
+            transform: scale(2);
+        }
+        /*Nur Azimah 22037444*/
+ 
+        /*Bridget Wong 22013272*/
+        .oval {
+            width: 200px;
+            height: 100px;
+            background: rgb(197, 238, 245);
+            border-radius: 50%;
+            transition: transform 0.5s ease;
+        }
+        /*Bridget Wong 22013272*/
+        .oval:hover {
+            transform: scale(1.1);
+        }
+ 
+   
+    </style>
+    <title>Shapes</title>
+</head>
+<body>
+   <div class="diamond"></div>
+   <div class="parallelogram"></div>
+   <div class="star"></div>
+   <div class="octagon"></div>
+   <div class="circle"></div>
+   <div class="oval"></div>
+   </div>
+</body>
+</html>
